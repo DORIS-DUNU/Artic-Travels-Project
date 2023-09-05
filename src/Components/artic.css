@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-container{
+    background-image: url(./Images/background-min.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+.header-container::before{
+    content: "";
+    position: absolute;
+    height:100vh;
+    width: 100%;
+    z-index: 2;
+    left:0;
+    background-color:#000000;
+    opacity: 0.4;
+}
+
+nav{
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 3;
+}
+
+.nav-brand{
+    display: flex;
+    place-items: center;
+    width: 12%;
+}
+
+
+.nav-brand h3{
+    color: #ffffff;
+    font-size: 1rem;
+    padding-left: 4%;
+}
+
+.nav-brand img{
+    height: 5vh;
+    border: 0.5px dashed white;
+    border-radius: 50%;
+}
+
+
+
+.collapse ul{
+     display: flex;
+     justify-content: space-between;
+ }
+
+nav li{
+     list-style-type: none;
+     padding-left: 3%;
+ }
+
+ nav a{
+     text-decoration: none;
+     color: #ffffff;
+     font-size: 0.75rem;
+ }
+
+ nav button{
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    border: none;
+    color:#3E86F5;
+    font-size: 0.8rem;
+ }
+
+ #bar{
+     visibility:hidden;
+ }
+
+ /* HERO SECTION */
+ .hero{
+     display: grid;
+     padding-top: 7%;
+     align-content: center;
+     justify-content: center;
+     text-align: center;
+     width: 100%;
+     height: 70vh;
+     color:white;
+     position: relative;
+     z-index: 3;
+ }
+
+ .hero h3{
+     font-weight: 700;
+     font-size: 3rem;
+     padding-bottom: 1%;
+ }
+
+ .hero p{
+    padding-bottom: 3%;
+    font-size: 1rem;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+
+/* BOOKTRIP SECTION */
+.booktrip-container{
+    display: grid;
+    height: 50vh;
+}
+
+
+.booktrip-second-container{
+    display: flex;
+}
+
+.booktrip-first-container{
+    border-radius: 10px;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 2;
+    margin: -5% 11% -5% 11%;
+}
+
+.booktrip-first-container section{
+    display: grid;
+}
+
+
+.booktrip-first-container h3{
+    font-size: 0.9rem;
+    color:#929191;
+    font-weight: 300;
+}
+
+.booktrip-first-container p{
+    font-size: 0.8rem;
+    font-weight: 800;
+    margin-top: -1rem;
+    
+}
+
+.booktrip-first-container button{
+    background-color: #3E86F5;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    /* padding: 1rem 0rem; */
+}
+
+#icon-1,
+#icon-2,
+#icon-3,
+#icon-4,
+#icon-5,
+#icon-6{
+    vertical-align: middle;
+    font-size: 1.3rem;
+}
+
+#icon-1{
+    color: #3E86F5;
+}
+
+#icon-2{
+    color: #00C07B;
+}
+
+#icon-3,
+#icon-4{
+    color: #CC0024;
+}
+
+.booktrip-second-container{
+    align-items: flex-start;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    width: 80%;
+    margin: 10% 10% 0% 10%;
+}
+
+.booktrip-second-container img{
+    height: 10vh
+}
+
+/* REGION SECTION */
+
+.region-text{
+    background-image: url(./Images/map.png);
+    background-size: 100% 100%;
+}
+
+.region span{
+    color: #3E86F5;
+}
+
+.region h3,
+.region p,
+.region h4{
+    text-align: center;
+}
+
+.region h3{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.region p{
+    padding-top: 1%;
+    color: #929191;
+}
+
+.region h4{
+    font-size: 1.8rem;
+    padding: 5% 0%;
+}
+
+.region-container{
+    display: flex;
+    height: 120vh;
+}
+
+.region-container::before{
+    content:"";
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.5;
+    z-index: 2;
+    height: 120vh;
+    width: 100%;
+    left:0;
+}
+
+#region-img1,
+#region-img2,
+#region-img3{
+    background-size: cover;
+    width:33%;
+}
+
+#region-img1{
+    background-image: url(./Images/tourist-min.jpg);
+    background-position: 50% 0%;
+}
+
+#region-img2{
+    background-image: url(./Images/snow-boarder-min.jpg);
+    background-position: 30% 0%;
+}
+
+#region-img3{
+    background-image: url(./Images/skier-min.jpg);
+    background-position: 55% 0%;
+}
+
+/* RESORT SECTION */
+.resort-container{
+    height: auto;
+    width: 80%;
+    margin: 0% 10%;
+    padding: 15% 0% 0% 0%;
+}
+
+.resort-container h3{
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 900;
+    padding-left: 5%;
+}
+
+
+#resort-img1,
+#resort-img2,
+#resort-img3,
+#resort-img4{
+    width: 25rem;
+    height: 90vh;
+    background-size: 100% 100%;
+    border-radius: 20px;
+    margin-top: 5%;
+}
+
+#resort-img1{
+    background-image: url(./Images/beach-min.jpg);
+}
+
+#resort-img2{
+    background-image: url(./Images/snow-min.jpg);
+    margin-top: -20%;
+    display: grid;
+    align-content: end;
+    position: relative;
+}
+
+#resort-img2::before{
+    content: "";
+    position: absolute;
+    background-color: #000000;
+    border-radius: 20px;
+    opacity: 0.5;
+    width: 25rem;
+    height: 90vh;
+    z-index: 1;
+}
+
+
+#resort-img2 h4{
+    color:#ffffff;
+    z-index: 2;
+    font-size: 1.5rem;
+    margin-left: 5%;
+    padding-bottom: 3%;
+}
+
+#resort-img2 p{
+    color: #cccaca;
+    z-index: 2;
+    font-size: 0.8rem;
+    margin-left: 5%;
+    padding-bottom: 5%;
+}
+
+#resort-img2 button{
+    background-color: #3E86F5;    
+    color: #ffffff;
+    z-index: 2;
+    border: none;
+    border-radius: 8px;
+    height: 7vh;
+    width: 90%;
+    margin: 0% 5% 10% 5%;
+
+}
+
+#resort-img3{
+    background-image: url(./Images/maldives-min.jpg);
+}
+
+#resort-img4{
+    background-image: url(./Images/skier-min.jpg);
+    margin-top: -20%;
+}
+
+/* PASSES SECTION */
+.passes-container{
+    margin-top: 5%;
+    background-image: url(./Images/female-snowboarder-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10px -50px;
+    height: 75vh;
+}
+
+.passes-container::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    background-color: #000000;
+    opacity: 0.65;
+    z-index: 2;
+ 
+}
+
+.passes-container h3,
+.passes-container button{
+    position: relative;
+    z-index: 3;
+    line-height: 1.5;
+}
+
+.passes-container h3{
+    font-size: 3.5rem;
+    color: #ffffff;
+    padding-top: 12%;
+    padding-left: 5%;
+}
+
+.passes-container button{
+    background-color: #3E86F5;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 4%;
+    margin-left: 5%;
+    height: 10vh;
+    width: 15%;
+}
+
+/* FOOTER SECTION */
+.footer{
+    height: 50vh;
+}
+
+.footer-first{
+    display: flex;
+}
+
+.footer-first{
+    padding-top: 4%;
+}
+
+
+.logo img{
+    height: 6vh;
+    border: 0.5px dashed white;
+    border-radius: 50%;
+}
+
+.footer-first-div1 p{
+    font-size: 0.7rem;
+}
+
+.social{
+    color: #3E86F5;
+    padding: 0% 30%;
+    font-size: 0.8rem;
+}
+
+.footer-second-div1{
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+#div1,
+#div2,
+#div3{
+    display: grid;
+    align-content: space-between;
+}
+
+#div1 h4,
+#div2 h4,
+#div3 h4{
+    color: #3E86F5;
+    font-size: 0.9rem;
+}
+
+#div1 p,
+#div2 p,
+#div3 p{
+    font-size: 0.7rem;
+}
+
+.footer-second{
+    padding-left: 5%;
+    padding-top: 5%;
+    width: 100%;
+}
+
+.footer-second-div1{
+    font-size: 0.8rem;
+}
+
+
+
+@media screen and (min-width: 100px)  and (max-width: 1200px) {
+    .hero h3,
+    .region-text h3{
+        font-size: 1.5rem;
+    }
+
+    .hero p,
+    .region-text p{
+        font-size: 0.8rem;
+    }
+    .booktrip-first-container{
+        margin: 0% 0%;
+        border-radius: none;
+        padding: 0;
+    }
+
+    .booktrip-first-container h3{
+        font-size: 0.9rem ;
+    }
+
+    .booktrip-second-container{
+        padding-top: 0%;
+        margin-top: 6%;
+    }
+
+    .booktrip-first-container p{
+        font-size: 0.7rem;
+    }
+
+    #icon-1,
+    #icon-2,
+    #icon-3,
+    #icon-4,
+    #icon-5,
+    #icon-6{
+        font-size: 1rem;
+        vertical-align: middle;
+    }
+
+    .booktrip-second-container img{
+        height:5vh;
+    }
+
+    .region{
+        position: relative;
+        margin-top: 60%;
+        font-size: 80%;
+    }
+
+
+    .resort-img-container{
+        position: relative;
+    }
+
+    .resort-container{
+        height:auto;
+    }
+
+    #resort-img1,
+    #resort-img2,
+    #resort-img3,
+    #resort-img4{
+        margin-top: 20%;
+        height: 60vh;
+    }
+
+    #resort-img2::before{
+        width: 17.5rem;
+        height:60vh;
+    }
+
+    .passes-container{
+        height: 75vh;
+    }
+
+    .passes-container::before{
+        height: 66vh;
+    }
+
+    .passes-container button{
+        width: 50%;
+    }
+
+    .passes-container h3{
+        font-size: 1.5rem;
+    }
+    
+    .footer-second h5{
+        font-size: 0.8rem;
+    }
+
+    .footer-second-div1 p{
+        font-size: 0.7rem;
+    }
+
+    .social{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+@media screen and (min-width:768px) and (max-width:1400px) {
+    .region{
+        position: relative;
+        margin-top: 30%;
+        font-size: 80%;
+    }
+
+    
+    #resort-img2::before{
+        width: 25rem;
+        height:60vh;
+    }
+
+    .passes-container::before{
+        height: 75vh;
+    }
+
+}
+
+
+
+
+
