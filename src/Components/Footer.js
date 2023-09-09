@@ -58,7 +58,7 @@ const Footer = () => {
 
       <section className="footer-second pt-5 ">
         <div className="row w-100 text-center">
-            <h5 className="col-lg-6">© 2023 Arctic Travels - All right reserved.</h5>
+            <h6 className="col-lg-6">© 2023 Arctic Travels - All right reserved.</h6>
             <div className="footer-second-div1 col-lg-6 row">
                 <p className="col-lg-6">Privacy Policy</p>
                 <p  className="col-lg-6">Terms of Use</p>
